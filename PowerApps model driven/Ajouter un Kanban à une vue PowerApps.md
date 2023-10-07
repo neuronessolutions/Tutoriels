@@ -111,9 +111,43 @@ L'objectif est de les présenter sous forme de KanBan.
 
 ![Capture d’écran, le 2023-10-07 à 14 17 59](https://github.com/nuage365/Tutoriels/assets/102873102/c3a9cf40-ed6b-4e6b-9ed9-a7444a095762)
 
-#### Etape 24 :
+#### Etape 24 : On va configurer la vue par défaut "toutes les activités et tâches". Pour cela, double cliquer sur la vue pour obtenir l'écran suivant.
+Cliquez ensuite dans la section "Tâches courantes" sur l'option "Contrôles personnalisés".
 
 ![Capture d’écran, le 2023-10-07 à 14 19 00](https://github.com/nuage365/Tutoriels/assets/102873102/b0043509-a8f3-4e4e-9fa8-9d0e089b8e14)
+
+#### Etape 25 : De la même façon que pour la table "Activités et tâches", ajouter le contrôle Kanban (voir étape 21)
+Comme pour la table, on va juste avoir une vue Kanban en web et tablette. On n'active pas ce composant sur le mobile / téléphone.
+
+![Capture d’écran, le 2023-10-07 à 14 19 12](https://github.com/nuage365/Tutoriels/assets/102873102/88110ec2-70d4-4395-8c95-874c09ff35a7)
+
+![Capture d’écran, le 2023-10-07 à 14 19 26](https://github.com/nuage365/Tutoriels/assets/102873102/1dae120f-aee3-4b67-b9b5-0c483de32d1d)
+
+![Capture d’écran, le 2023-10-07 à 14 19 45](https://github.com/nuage365/Tutoriels/assets/102873102/baf565b7-db20-4f6e-aa42-de70c25282bd)
+
+#### Etape 26 : Une fois fais, on clique sur "Enregistrer et Fermer"
+
+![Capture d’écran, le 2023-10-07 à 14 27 36](https://github.com/nuage365/Tutoriels/assets/102873102/1fcf1abe-06fa-4dc7-ac4b-27ac1375b9a0)
+
+#### Etape 27 : Ne pas oublier de Publier toutes les personnalisations :)
+![Capture d’écran, le 2023-10-07 à 14 27 50](https://github.com/nuage365/Tutoriels/assets/102873102/b5487914-7fa7-40d3-9fbb-be1583ef04ab)
+
+#### Etape 28 : Maintenant on retourne dans notre environnement de développement dans l'application. On rafraichit la page en actualisant ou en faisant F5. Maintenant lorsqu'on clique sur le menu de gauche "Activités et Tâches", notre vue Kanban s'affiche par miracle :)
+
+![Capture d’écran, le 2023-10-07 à 14 29 07](https://github.com/nuage365/Tutoriels/assets/102873102/35f4d317-a6c9-4567-9cda-bbe0f997ec63)
+
+#### Etape 29 : On va tester la vue. On prend l'activité "Faire tutoriel sur Kanban" et on la glisse vers la colonne "Terminé". Un écran s'affiche pour confirmer le changement de statut ! On clique sur le bouton "Fermer Activités et Tâches" et l'activité est bien déplacée.
+
+![Capture d’écran, le 2023-10-07 à 14 29 20](https://github.com/nuage365/Tutoriels/assets/102873102/0a36d300-0321-4fd1-87bb-42874d152b9a)
+
+#### Etape 30 : On peut filtrer après sur ce que l'on veut comme la date d'échéance. Ici j'affiche les activités à venir des 7 prochains jours.
+On peut ajuster certains éléments du Kanban lorsque nous sommes dans la définition de la vue au niveau du contrôle.
+
+![Capture d’écran, le 2023-10-07 à 14 31 14](https://github.com/nuage365/Tutoriels/assets/102873102/743c2e2f-dfa7-46c7-a311-d2ede54fcfa7)
+
+> Comme d'habitude, Si vous avez des questions, vous pouvez me contacter sur [Linkedin](https://www.linkedin.com/in/dominiquedelaire/)
+> Dominique
+
 
 
 
