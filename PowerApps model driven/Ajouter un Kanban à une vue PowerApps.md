@@ -1,1 +1,99 @@
-# test
+# Tutoriel Ajouter un composant Kanban dans une vue PowerApps
+> Version 2023.10.07, Auteur : Dominique Delaire
+> 
+![Capture d’écran, le 2023-10-07 à 14 29 07](https://github.com/nuage365/Tutoriels/assets/102873102/18dd8668-0cb7-4c55-b958-b5224eb72815)
+
+Dans cet exemple, nous allons créer une nouvelle table Dataverse qui servira d'activités et de tâches à une table Dataverse nommée "Entités" qui gère des contacts, entreprises, fournisseurs, ...
+
+La table des activités servira pour suivre des tâches, évènements, activités, rdv en lien avec une "Entité".
+
+Le module permettra de gérer ses activités sous forme de Kanban !
+
+# Prérequis
+* Avoir un compte Microsoft PowerApps et un environnement de développement pour créer une solution
+* Créer une solution dans votre environnement (dans notre exemple Mylife365 mais vous pouvez mettre n'importe quel nom)
+
+# Partie 1 : Eléments de base
+#### Etape 1 : Dans notre solution "Mylife365" (créez la votre), nous allons ajouter une nouvelle table.
+
+![Capture d’écran, le 2023-10-07 à 13 55 00](https://github.com/nuage365/Tutoriels/assets/102873102/37b3510e-7d23-4924-9744-5aeebc5c1808)
+
+#### Etape 2 : Nommez la "Activités et tâches" et choisissez comme type "Activités".
+
+![Capture d’écran, le 2023-10-07 à 13 56 14](https://github.com/nuage365/Tutoriels/assets/102873102/687a4326-3d12-40ec-a219-ceac3416e303)
+
+#### Etape 3 : Vous pouvez cocher aussi "Apparaître dans les résultats de recherche", puis enregistrez. Laissez les champs créés automatiquement tel quel pour la démo.
+
+![Capture d’écran, le 2023-10-07 à 13 57 12](https://github.com/nuage365/Tutoriels/assets/102873102/cdf45e2c-a069-485e-a8ae-054f306cae42)
+
+#### Etape 4 : Pour faire le lien entre cette nouvelle table et notre table existante de gestion de contacts et d'entreprise, il faut dans la table de gestion des contacts et d'entreprise, cocher la case "Faire de cette table une option quand : création d'une activité" 
+
+![Capture d’écran, le 2023-10-07 à 14 00 42](https://github.com/nuage365/Tutoriels/assets/102873102/b1eec317-337b-4754-9486-bb050b24fac2)
+
+#### Etape 5 : Notre table "Activités et Tâches" est bien présente dans la liste des objets de notre solution.
+
+![Capture d’écran, le 2023-10-07 à 14 01 18](https://github.com/nuage365/Tutoriels/assets/102873102/652843be-f46b-4b6c-a73f-cc87cc2e99bc)
+
+#### Etape 6 : On va maintenant ajouter notre entité dans le menu de l'application.
+
+![Capture d’écran, le 2023-10-07 à 14 02 32](https://github.com/nuage365/Tutoriels/assets/102873102/2f311a47-e315-4e10-9589-f4f1d03f1ce3)
+
+#### Etape 7 : Il suffit de sélectionner notre table dataverse créée
+
+![Capture d’écran, le 2023-10-07 à 14 03 45](https://github.com/nuage365/Tutoriels/assets/102873102/5ade3530-2d85-4111-a90f-c2cb20aeb5ec)
+
+#### Etape 8 : pour avoir notre nouvelle option dans le menu. Enregistrer et publier vos personnalisations.
+
+![Capture d’écran, le 2023-10-07 à 14 03 58](https://github.com/nuage365/Tutoriels/assets/102873102/2a4f3236-c0ce-445e-9858-da0028a8801e)
+
+#### Etape 9 : Ensuite, sélectionner votre application model driven dans la solution et sur le bouton droit de la souris. Sélectionner "Lire" pour lancer votre apps.
+
+![Capture d’écran, le 2023-10-07 à 14 05 47](https://github.com/nuage365/Tutoriels/assets/102873102/ec177d77-e5f0-48fb-a789-c49b044ab287)
+
+#### Etape 10 : On va tester maintenant et commencer à saisir des exemples dans notre environnement de développement pour notre nouvelle table.
+
+![Capture d’écran, le 2023-10-07 à 14 06 20](https://github.com/nuage365/Tutoriels/assets/102873102/e092b3fa-df97-4dda-85fe-171853b61fb3)
+
+#### Etape 11 : On choisit Activités et tâches, puis dans le bandeau du haut à droite, on clique sur les ... et on sélectionne "Activités et Tâches" pour créer une nouvelle activité.
+
+![Capture d’écran, le 2023-10-07 à 14 06 52](https://github.com/nuage365/Tutoriels/assets/102873102/a9e45099-e059-471b-8f9a-7984c9897c9d)
+
+#### Etape 12 : Saisir un Sujet et un concernant. Dans le concernant, il va pointer vers la table "Entité" contenant les contacts ou entreprises.
+C'est automatique car il y a 2 tables dans notre solution PowerApps et grâce à l'étape 4 (cochez création d'une activité)
+
+![Capture d’écran, le 2023-10-07 à 14 07 27](https://github.com/nuage365/Tutoriels/assets/102873102/c7664e51-2e00-493e-ae39-f5c0c5b72539)
+
+#### Etape 13 : Sélectionner un enregistrement de la table "Entité" et saisir une date d'échéance par exemple avec une heure spécifique. Puis Enregistrez et fermer.
+
+![Capture d’écran, le 2023-10-07 à 14 09 12](https://github.com/nuage365/Tutoriels/assets/102873102/2383d5a6-6905-46fd-813b-a28552fb0baa)
+
+#### Etape 14 : Créez un deuxième enregistrement (Etape 11) mais cette fois ci dans le "Concernant", nous allons créer un nouvel enregistrement. Pour cela, cliquez sur "Créer enregistrement", puis choisir "Entités".
+
+![Capture d’écran, le 2023-10-07 à 14 10 10](https://github.com/nuage365/Tutoriels/assets/102873102/9179e5ba-3557-4be1-aa4b-6fc9ca2c0da7)
+
+![Capture d’écran, le 2023-10-07 à 14 10 21](https://github.com/nuage365/Tutoriels/assets/102873102/f76cf70a-69ec-45d0-a19d-29b1292dcfbb)
+
+#### Etape 15 : Saisissez des données dans l'entité (ca peut être votre entité à vous). Puis cliquez sur "Enregistrer et fermer"
+
+![Capture d’écran, le 2023-10-07 à 14 10 47](https://github.com/nuage365/Tutoriels/assets/102873102/875b7ec6-2224-4559-a58a-e23bef0f8f7d)
+
+#### Etape 16 : Le "Concernant" a maintenant votre nouvelle donnée.
+
+![Capture d’écran, le 2023-10-07 à 14 11 13](https://github.com/nuage365/Tutoriels/assets/102873102/d7b27ffe-0137-4d28-a27f-be11561975ca)
+
+#### Etape 17 : Nous avons maintenant 2 nouvelles activités et tâches. Nous voyons par défaut que la vue présente les informations sous forme de liste.
+L'objectif est de les présenter sous forme de KanBan.
+
+![Capture d’écran, le 2023-10-07 à 14 12 48](https://github.com/nuage365/Tutoriels/assets/102873102/c10b382c-87ca-4cd3-9b56-ab4df0ed1630)
+
+# Partie 2 : Définition du Kanban pour une vue spécifique
+
+
+
+
+
+
+
+
+
+
