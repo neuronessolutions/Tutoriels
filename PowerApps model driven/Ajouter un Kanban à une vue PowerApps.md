@@ -12,6 +12,7 @@ Le module permettra de gérer ses activités sous forme de Kanban !
 # Prérequis
 * Avoir un compte Microsoft PowerApps et un environnement de développement pour créer une solution
 * Créer une solution dans votre environnement (dans notre exemple Mylife365 mais vous pouvez mettre n'importe quel nom)
+* Les vues Kanban peuvent se faire uniquement sur des tables de type "Activités" ou "Opportunités".
 
 # Partie 1 : Eléments de base
 #### Etape 1 : Dans notre solution "Mylife365" (créez la votre), nous allons ajouter une nouvelle table.
@@ -87,6 +88,33 @@ L'objectif est de les présenter sous forme de KanBan.
 ![Capture d’écran, le 2023-10-07 à 14 12 48](https://github.com/nuage365/Tutoriels/assets/102873102/c10b382c-87ca-4cd3-9b56-ab4df0ed1630)
 
 # Partie 2 : Définition du Kanban pour une vue spécifique
+#### Etape 18 : Pour ajouter une vue Kanban, il va falloir passer par l'ancienne interface. Pour cela, cliquez sur l'engrenage et choisir "Paramètres avancés".
+![Capture d’écran, le 2023-10-07 à 14 12 48](https://github.com/nuage365/Tutoriels/assets/102873102/0e7b98dc-3267-48d5-8486-45686dc583f5)
+
+#### Etape 19 : Puis dans le bandeau supérieur, choisir "Paramètres" puis l'option "Solutions". Sélectionner votre solution (la mienne ici est Mylife365)
+
+![Capture d’écran, le 2023-10-07 à 14 14 32](https://github.com/nuage365/Tutoriels/assets/102873102/a5c31d11-8b19-4b4b-9dcf-c1003cf22e28)
+
+#### Etape 20 : Double cliquer sur "Activités et Tâches" dans les entités de la solution. Puis choisir l'onglet "Contrôles". Choisir ensuite l'option "Ajouter un contrôle".
+
+![Capture d’écran, le 2023-10-07 à 14 15 13](https://github.com/nuage365/Tutoriels/assets/102873102/5b62b9f8-e347-4be6-97f6-83fb129b7395)
+
+#### Etape 21 : Sélectionner ensuite dans la liste le contrôle standard "Kanban" puis cliquer sur le bouton "Ajouter"
+
+![Capture d’écran, le 2023-10-07 à 14 15 46](https://github.com/nuage365/Tutoriels/assets/102873102/0b4c573c-4962-430e-a7dd-9f957109dccb)
+
+#### Etape 22 : Nous allons activer cette interface seulement pour web et tablette. Sur le téléphone, cela serait moins ergonomique surtout pour déplacer des enregistrements de case en case :)
+
+![Capture d’écran, le 2023-10-07 à 14 17 06](https://github.com/nuage365/Tutoriels/assets/102873102/f7c1654e-7d8e-4144-8ba5-070f12801599)
+
+#### Etape 23 : On va faire la même chose mais au lieu de l'entité, on va choisir une vue spécifique existante pour appliquer la vue Kanban :)
+
+![Capture d’écran, le 2023-10-07 à 14 17 59](https://github.com/nuage365/Tutoriels/assets/102873102/c3a9cf40-ed6b-4e6b-9ed9-a7444a095762)
+
+#### Etape 24 :
+
+![Capture d’écran, le 2023-10-07 à 14 19 00](https://github.com/nuage365/Tutoriels/assets/102873102/b0043509-a8f3-4e4e-9fa8-9d0e089b8e14)
+
 
 
 
