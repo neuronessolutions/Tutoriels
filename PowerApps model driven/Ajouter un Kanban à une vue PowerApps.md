@@ -88,7 +88,7 @@ L'objectif est de les présenter sous forme de KanBan.
 ![Capture d’écran, le 2023-10-07 à 14 12 48](https://github.com/nuage365/Tutoriels/assets/102873102/c10b382c-87ca-4cd3-9b56-ab4df0ed1630)
 
 # Partie 2 : Définition du Kanban pour une vue spécifique
-#### Etape 18 : Pour ajouter une vue Kanban, il va falloir passer par l'ancienne interface. Pour cela, cliquez sur l'engrenage et choisir "Paramètres avancés".
+#### Etape 18 : Pour ajouter une vue Kanban sur l'ensemble des vues, il va falloir passer par l'ancienne interface. Pour cela, cliquez sur l'engrenage et choisir "Paramètres avancés".
 ![Capture d’écran, le 2023-10-07 à 14 12 48](https://github.com/nuage365/Tutoriels/assets/102873102/0e7b98dc-3267-48d5-8486-45686dc583f5)
 
 #### Etape 19 : Puis dans le bandeau supérieur, choisir "Paramètres" puis l'option "Solutions". Sélectionner votre solution (la mienne ici est Mylife365)
@@ -103,7 +103,8 @@ L'objectif est de les présenter sous forme de KanBan.
 
 ![Capture d’écran, le 2023-10-07 à 14 15 46](https://github.com/nuage365/Tutoriels/assets/102873102/0b4c573c-4962-430e-a7dd-9f957109dccb)
 
-#### Etape 22 : Nous allons activer cette interface seulement pour web et tablette. Sur le téléphone, cela serait moins ergonomique surtout pour déplacer des enregistrements de case en case :)
+#### Etape 22 : Nous allons activer cette interface seulement pour web et tablette. Sur le téléphone, cela serait moins ergonomique surtout pour déplacer des enregistrements de case en case :) 
+Si vous activez ce contrôle sur l'entité, toutes les vues auront ce contrôle par défaut. Si vous souhaitez qu'une vue spécifique est une vue Kanban est pas les autres, allez à l'étape suivante 23.
 
 ![Capture d’écran, le 2023-10-07 à 14 17 06](https://github.com/nuage365/Tutoriels/assets/102873102/f7c1654e-7d8e-4144-8ba5-070f12801599)
 
