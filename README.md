@@ -5,3 +5,6 @@
 
 ## ChatGPT
 ### [Créer un GPT spécifique de A à Z sans code](https://github.com/nuage365/Tutoriels/blob/main/ChatGpt/Créer%20un%20GPT%20spécifique%20de%20A%20à%20Z%20sans%20code.md)
+
+## Autres contributions 
+### [Applications Open Source, Tutoriels et codes](https://github.com/nuage365)
