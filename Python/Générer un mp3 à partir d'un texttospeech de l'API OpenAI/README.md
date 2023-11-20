@@ -17,6 +17,7 @@ import os
 import sys
 import shell_constants
 os.environ["OPENAI_API_KEY"] = shell_constants.APIKEYOPENAI
+# shell_constants.APIKEYOPENAI peut être remplacé ici par votre clé secrète d'OPENAI :)
 
 client = OpenAI()
 
