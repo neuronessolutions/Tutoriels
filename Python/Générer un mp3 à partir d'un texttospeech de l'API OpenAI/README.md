@@ -33,7 +33,8 @@ response.stream_to_file(speech_file_path)
 ```
 ## En exécutant le programme texttospeech_openai.py, le fichier test.mp3 est créé !
 
-![Capture d’écran, le 2023-11-19 à 22 29 22](https://github.com/nuage365/Tutoriels/assets/102873102/79b598f2-b96a-42b6-9977-7537fc77e59f)
+![Capture d’écran, le 2023-11-19 à 23 12 00](https://github.com/nuage365/Tutoriels/assets/102873102/342109ba-caa3-4e81-aa7d-5f52835a7705)
+
 
 J'ai converti le fichier audio test.mp3 en mp4 pour pouvoir l'écouter à partir de Github directement :) je joins le fichier test.mp3 avec le source dans les fichiers.
 
