@@ -33,6 +33,8 @@ response.stream_to_file(speech_file_path)
 
 ![Capture d’écran, le 2023-11-19 à 22 29 22](https://github.com/nuage365/Tutoriels/assets/102873102/79b598f2-b96a-42b6-9977-7537fc77e59f)
 
-J'ai converti le fichier audio test.mp3 en mp4 pour pouvoir l'écouter à partir de Github directement :) je joins le fichier test.mp3 avec le source dans les fichiers. 
+J'ai converti le fichier audio test.mp3 en mp4 pour pouvoir l'écouter à partir de Github directement :) je joins le fichier test.mp3 avec le source dans les fichiers.
+
+Cliquez sur le lien pour écouter le résultat : 
 https://github.com/nuage365/Tutoriels/assets/102873102/d131a524-82aa-473d-a4fd-59480404d7b9
 
