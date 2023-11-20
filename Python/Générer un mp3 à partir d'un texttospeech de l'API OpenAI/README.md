@@ -2,6 +2,7 @@
 > Version 2023.11.19.1, Auteur : Dominique Delaire
 
 Dans ce tutoriel, nous allons en quelques lignes de code, générer un mp3 à partir d'un texte et de la fonction texttospeech d'OpenAI.
+Vous pourriez utiliser ce code pour générer des mp3 qui lisent des documents ou des textes beaucoup plus long :)
 
 ## Prérequis
 * Avoir d'installé sur Windows, Mac ou Linux, une dernière version de Python ainsi que de la dernière version du module de OpenAI (pip install openai)
