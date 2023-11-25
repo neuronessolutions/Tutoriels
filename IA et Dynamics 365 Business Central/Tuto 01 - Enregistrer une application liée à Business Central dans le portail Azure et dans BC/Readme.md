@@ -10,13 +10,15 @@ En fait, avant il n'était pas nécessaire de s'authentifier ainsi. il était po
 * Avoir un abonnement valide à Business Central ou une version d'essai
 * Avoir un compte microsoft ou un compte microsoft avec un accès au portail Azure (vous pouvez obtenir un compte et des crédits gratuits si vous n'en avez pas encore !)
 
-## 
+## Exemple et objectif du Tutoriel
 
-![Capture d’écran, le 2023-11-22 à 10 59 56](https://github.com/nuage365/Tutoriels/assets/102873102/de3a73a6-29f2-4371-a28f-e9df4d8023b8)
-
+Dans Business Central, nous avons différentes API de disponible et nous pouvons aussi définir les nôtres.
 
 ![Capture d’écran, le 2023-11-22 à 11 00 52](https://github.com/nuage365/Tutoriels/assets/102873102/d85e07e6-59d7-4214-8c31-482db4db9be9)
 
+Pour nos tests, nous allons utiliser une API standard de Business Central qui fait référence aux clients de l'ERP.
+
+Pour cela, aller dans l'écran Web services.
 
 ![Capture d’écran, le 2023-11-22 à 11 01 21](https://github.com/nuage365/Tutoriels/assets/102873102/e586a529-d77f-4917-8c94-a29750f6cc85)
 
