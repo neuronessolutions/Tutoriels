@@ -1,12 +1,16 @@
-# Tuto 01 - Enregistrer une application liée à Business Central dans le portail Azure et dans BC
-> Version 2023.11.23.1, Auteur : Dominique Delaire
+# Tuto 01 - Enregistrer une application liée à Business Central et ses API dans le portail Azure et dans BC
+> Version 2023.11.25.1, Auteur : Dominique Delaire
 
-Dans ce premier tutoriel, nous allons apprendre comment enregistrer une application qui sera liée à Microsoft Dynamics 365 Business Central pour créer des services ou apps externes en lien avec l'ERP. 
+Dans ce premier tutoriel, nous allons apprendre comment enregistrer nos applis et services qui seront liés à Microsoft Dynamics 365 Business Central et à ses API pour créer des services d'intelligence artificielle à partir de Shellbots ou apps externes en lien avec l'ERP. 
+
+**Pourquoi as t'on besoin d'enregistrer des applications lorsque nous voulons utiliser des données de notre ERP préféré ?**
+En fait, avant il n'était pas nécessaire de s'authentifier ainsi. il était possible juste avec son nom d'utilisateur et une web api key paramétréé directement dans Business Central de se connecter aux API BC. Pour des raisons de sécurité et d'optimisation, **il faut maintenant enregistrer chacune de ses applications qui vont utiliser les API BC dans le portail Microsoft Azure ainsi que dans Business central, une fois l'enregistrement fait dans Azure.**
 
 ## Prérequis
 * Avoir un abonnement valide à Business Central ou une version d'essai
+* Avoir un compte microsoft ou un compte microsoft avec un accès au portail Azure (vous pouvez obtenir un compte et des crédits gratuits si vous n'en avez pas encore !)
 
-
+## 
 
 ![Capture d’écran, le 2023-11-22 à 10 59 56](https://github.com/nuage365/Tutoriels/assets/102873102/de3a73a6-29f2-4371-a28f-e9df4d8023b8)
 
