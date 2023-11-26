@@ -12,7 +12,7 @@ En fait, avant il n'était pas nécessaire de s'authentifier ainsi. il était po
 
 ## Exemple et objectif du Tutoriel
 
-Dans Business Central, nous avons différentes API de disponible et nous pouvons aussi définir les nôtres.
+Dans Business Central, nous avons différentes API disponibles et nous pouvons aussi définir les nôtres.
 
 ![Capture d’écran, le 2023-11-22 à 11 00 52](https://github.com/nuage365/Tutoriels/assets/102873102/d85e07e6-59d7-4214-8c31-482db4db9be9)
 
