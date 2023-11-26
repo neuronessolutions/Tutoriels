@@ -16,9 +16,9 @@ Dans Business Central, nous avons différentes API disponibles et nous pouvons a
 
 ![Capture d’écran, le 2023-11-22 à 11 00 52](https://github.com/nuage365/Tutoriels/assets/102873102/d85e07e6-59d7-4214-8c31-482db4db9be9)
 
-Pour nos tests, nous allons utiliser une API standard de Business Central qui fait référence aux clients de l'ERP.
+Pour nos tests, nous allons utiliser une API standard de Business Central qui fait référence aux clients de l'ERP. Enregistrer une application permet d'utiliser n'importe quelle API ou future API que nous pourrions publier :)
 
-Pour cela, aller dans l'écran Web services.
+Pour nos tests, aller dans l'écran Web services.
 
 ![Capture d’écran, le 2023-11-22 à 11 01 21](https://github.com/nuage365/Tutoriels/assets/102873102/e586a529-d77f-4917-8c94-a29750f6cc85)
 
