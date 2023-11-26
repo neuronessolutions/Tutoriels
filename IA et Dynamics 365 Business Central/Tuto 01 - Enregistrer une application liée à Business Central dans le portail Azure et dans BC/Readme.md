@@ -39,42 +39,64 @@ Voici ce que nous allons choisir pour nos tests comme web service : **allez dans
 ## Enregistrement de notre application dans le portail Azure et dans BC
 Nous allons maintenant passer aux choses sérieuses :)
 
-**Pour commencer, allez sur le portail de microsoft azure : [https://azure.microsoft.com/](https://azure.microsoft.com/)**
+> **Pour commencer, allez sur le portail de microsoft azure : [https://azure.microsoft.com/](https://azure.microsoft.com/)**
 
 ![Capture d’écran, le 2023-11-22 à 11 11 55](https://github.com/nuage365/Tutoriels/assets/102873102/bef57aa2-b4dc-4220-92f3-4f092d5ba25f)
 
-
-![Capture d’écran, le 2023-11-22 à 11 12 53](https://github.com/nuage365/Tutoriels/assets/102873102/cd7561de-c3d4-4b91-955b-28e23223590a)
-
-![Capture d’écran, le 2023-11-22 à 11 14 48](https://github.com/nuage365/Tutoriels/assets/102873102/e4b235fa-3ea3-4ef6-8c6f-29059d5886e8)
+> **Puis choisir le module "Inscription d'applications" et cliquez sur le bouton "+ Nouvelle inscription"**
 
 ![Capture d’écran, le 2023-11-22 à 11 17 23](https://github.com/nuage365/Tutoriels/assets/102873102/4d83175e-70c7-46b8-b173-f68242370f21)
 
+> **Donnez lui un nom d'application** et qui reflète ce que vos applications ou services vont faire en lien avec Business Central.
+
+> Puis dans **"Types de comptes pris en charge", indiquer "Comptes dans cet annuaire d'organisation uniquement"**
+> Puis **dans l'écran "URI de redirection" choisissez Web et tapez l'adresse suivante : "https://businesscentral.dynamics.com/OAuthLanding.htm"**
+
+> Ce fichier htm est utilisé pour gérer les échanges entre Business Central et les autres services à travers Azure Active Directory ou maintenant avec la nouvelle appellation "Microsoft Entra ID"
 
 ![Capture d’écran, le 2023-11-22 à 11 18 17](https://github.com/nuage365/Tutoriels/assets/102873102/c246ffb7-d64c-4ee7-bb2d-930e1315fd09)
 
+> **Cliquez ensuite sur le bouton "S'inscrire"**
+
 ![Capture d’écran, le 2023-11-22 à 11 18 36](https://github.com/nuage365/Tutoriels/assets/102873102/47c75dd7-e4f1-4acf-8043-0879ea70c137)
+
+> **Vous obtenez ainsi déjà votre "Client ID" (ID D'application (client)) que nous utiliserons plus tard dans le tutoriel.**
+> **L'id de l'annuaire aussi est important pour se connecter à notre instance**
 
 ![Capture d’écran, le 2023-11-22 à 11 19 08](https://github.com/nuage365/Tutoriels/assets/102873102/dce71d59-f525-48b4-a4c0-28eba661088a)
 
+> **Maintenant, nous allons générer aussi un "Secret ID" que nous utiliserons dans nos applications avec le Client ID et l'Id de l'annuaire.**
+> **Pour cela, allez dans le menu "Certificats et Secrets" ou cliquez sur "Ajouter un certificat ou un secret".**
+
 ![Capture d’écran, le 2023-11-22 à 11 19 41](https://github.com/nuage365/Tutoriels/assets/102873102/ee8e9a90-26db-4d8b-a8ad-e4a72e767372)
+
+> **Cliquez ensuite sur "Nouveau secret Client"**
 
 ![Capture d’écran, le 2023-11-22 à 11 20 00](https://github.com/nuage365/Tutoriels/assets/102873102/793cccea-e03d-40b0-93f8-086cacff25bb)
 
+> **Ajoutez ensuite une description puis une date d'expiration. Ici, nous avons indiqué 6 mois mais vous pouvez personnaliser votre date d'expiration. A l'échéance, vous pourrez regénérer une clé afin que votre ou vos applications puissent fonctionner de nouveau et s'authentifier.**
+
 ![Capture d’écran, le 2023-11-22 à 11 20 57](https://github.com/nuage365/Tutoriels/assets/102873102/21618997-32d0-4475-8a93-2c04590192ae)
 
+> **On obtient le secret Client dans la colonne "Valeur". Vous pouvez aussi la copier et la mettre quelque part, elle nous servira plus tard pour nos tests d'authentification.**
 
 ![Capture d’écran, le 2023-11-22 à 11 21 38](https://github.com/nuage365/Tutoriels/assets/102873102/0768e734-6cfe-482e-8a8d-c11681490924)
 
+> **On peut générer plusieurs valeurs de Secret client pour chaque application ou par groupe d'applications si on le désire.**
+
 ![Capture d’écran, le 2023-11-22 à 11 22 32](https://github.com/nuage365/Tutoriels/assets/102873102/990ac474-4834-4d01-94b1-ce0557fc7b81)
 
-
+> **Ensuite, il faut indiquer des autorisations pour compléter notre enregistrement d'application(s).**
+> 
+> **Allez dans le menu "API autorisées" puis cliquez sur le bouton "Ajouter une nouvelle autorisation"**
 
 ![Capture d’écran, le 2023-11-22 à 11 24 44](https://github.com/nuage365/Tutoriels/assets/102873102/7146c870-8f24-4fb9-9027-43906488f6ff)
 
+> **Sélectionnez API "Dynamics 365 Business Central"**
 
 ![Capture d’écran, le 2023-11-22 à 11 24 59](https://github.com/nuage365/Tutoriels/assets/102873102/e067f4e1-64f0-4865-8da7-1f04a1de1f85)
 
+> **Ensuite, il faut sélectionner le type d'autorisation : choisir "Autorisations d'application"**
 
 ![Capture d’écran, le 2023-11-22 à 11 25 37](https://github.com/nuage365/Tutoriels/assets/102873102/825624ef-8cd4-4ad7-82a9-a4c49ff50554)
 
