@@ -36,7 +36,7 @@ Voici ce que nous allons choisir pour nos tests comme web service : **allez dans
 
 ![Capture d’écran, le 2023-11-22 à 11 06 06](https://github.com/nuage365/Tutoriels/assets/102873102/962e5728-65cc-4c16-8e02-61aa19cb330f)
 
-## Enregistrement de notre application dans le portail Azure et dans BC
+## Enregistrement de notre application dans le portail Azure 
 Nous allons maintenant passer aux choses sérieuses :)
 
 > **Pour commencer, allez sur le portail de microsoft azure : [https://azure.microsoft.com/](https://azure.microsoft.com/)**
@@ -100,32 +100,44 @@ Nous allons maintenant passer aux choses sérieuses :)
 
 ![Capture d’écran, le 2023-11-22 à 11 25 37](https://github.com/nuage365/Tutoriels/assets/102873102/825624ef-8cd4-4ad7-82a9-a4c49ff50554)
 
+> **Cochez les 4 autorisations et cliquez sur le bouton "Ajouter des autorisations"**
+
 ![Capture d’écran, le 2023-11-22 à 11 26 20](https://github.com/nuage365/Tutoriels/assets/102873102/4bebd678-2ef2-4ab1-a468-1d6e6a2ae3ca)
+
+> **Une fois l'ajout d'autorisations effectuée, il faut ajouter un consentement de l'administrateur.**
+> **Pour cela, cliquez sur "Accorder un consentement d'administrateur" (pour votre domaine)**
 
 ![Capture d’écran, le 2023-11-22 à 11 27 24](https://github.com/nuage365/Tutoriels/assets/102873102/dd08dc02-5f09-4f4a-91e1-e9cd4a44d315)
 
+> **Un message de confirmation apparaît. Cliquez sur "Oui"**
+
 ![Capture d’écran, le 2023-11-22 à 11 27 44](https://github.com/nuage365/Tutoriels/assets/102873102/2ff7ed07-2532-4658-b2df-bf1f4fed3a7e)
+
+> **Une fois effectué, le statut change et le consentement a été validé.**
 
 ![Capture d’écran, le 2023-11-22 à 11 28 07](https://github.com/nuage365/Tutoriels/assets/102873102/24429a4a-bf53-471a-95c2-31bf2feabb21)
 
-![Capture d’écran, le 2023-11-22 à 11 29 30](https://github.com/nuage365/Tutoriels/assets/102873102/43b39c82-49c0-4218-9802-1f984d7fd171)
+> **En revenant à l'accueil de votre application, tout est correctement configuré. Vous avez votre "Client Id", votre ou vos "secrets clients" et votre Id de l'annuaire. Notez bien ces valeurs pour nos tests.**
 
 ![Capture d’écran, le 2023-11-22 à 11 29 50](https://github.com/nuage365/Tutoriels/assets/102873102/57599eb6-908f-495b-a774-1b68b7c41c44)
 
+## Enregistrement de notre application dans Business Central 
+Après avoir enregistré notre ou nos apps dans le portail Microsoft Azure, il est maintenant aussi nécessaire d'enregistrer notre application directement dans 365 Business Central
 
-
-
-![Capture d’écran, le 2023-11-22 à 13 37 14](https://github.com/nuage365/Tutoriels/assets/102873102/252e6e22-bee3-4ddf-ac92-7d59d567f830)
+> **Pour cela, en tant qu'administrateur, dans l'instance BC où vous souhaitez lier votre app, chercher "Azure Active Directory Applications" ou "Microsoft Entrant ID app"**
 
 ![Capture d’écran, le 2023-11-22 à 13 38 00](https://github.com/nuage365/Tutoriels/assets/102873102/5b594896-5d48-44f1-9722-77cbf4fb6620)
 
+> **Dans l'écran "Azure Active Directory Applications", créer un nouvel enregistrement.**
+
 ![Capture d’écran, le 2023-11-22 à 13 38 38](https://github.com/nuage365/Tutoriels/assets/102873102/befee953-068d-42c1-8ca6-930a26a4e205)
 
-![Capture d’écran, le 2023-11-22 à 13 41 28](https://github.com/nuage365/Tutoriels/assets/102873102/f5999458-78b1-4462-87f5-8b5bd7a173b8)
-
-
+> **Dans le champ "Client ID", indiquez le "Client ID" de votre application enregistrée provenant d'Azure (ID D'application (client))**
+> **Et indiquez une description puis la valeur "Enabled" dans le champ "State"**
 
 ![Capture d’écran, le 2023-11-22 à 13 43 01](https://github.com/nuage365/Tutoriels/assets/102873102/9db586fa-496d-4901-a0bd-53e41b966b4b)
+
+> **Confirmez en cliquant sur "Oui"**
 
 ![Capture d’écran, le 2023-11-22 à 13 43 16](https://github.com/nuage365/Tutoriels/assets/102873102/b6d15b4a-d710-4677-abc6-3ccf9047cbb0)
 
