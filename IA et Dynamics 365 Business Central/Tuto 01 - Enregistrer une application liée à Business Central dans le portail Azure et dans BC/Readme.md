@@ -18,15 +18,28 @@ Dans Business Central, nous avons différentes API disponibles et nous pouvons a
 
 Pour nos tests, nous allons utiliser une API standard de Business Central qui fait référence aux clients de l'ERP. Enregistrer une application permet d'utiliser n'importe quelle API ou future API que nous pourrions publier :)
 
-Pour nos tests, aller dans l'écran Web services.
+Voici ce que nous allons choisir pour nos tests comme web service : **allez dans l'écran Web services.**
 
 ![Capture d’écran, le 2023-11-22 à 11 01 21](https://github.com/nuage365/Tutoriels/assets/102873102/e586a529-d77f-4917-8c94-a29750f6cc85)
 
 ![Capture d’écran, le 2023-11-22 à 11 01 59](https://github.com/nuage365/Tutoriels/assets/102873102/db8dc20c-2194-421f-9502-faabe05f9a0f)
+
+**Sélectionner la ligne comprenant la Page 22 Customers**
+
 ![Capture d’écran, le 2023-11-22 à 11 03 11](https://github.com/nuage365/Tutoriels/assets/102873102/f4910ee9-94f8-4197-8947-fec5856701eb)
+
+**Et faites un copier coller de la valeur de la colonne "OData V4 Url" dans un fichier texte ou autre et qui nous servira plus tard pour les tests**
+
 ![Capture d’écran, le 2023-11-22 à 11 05 26](https://github.com/nuage365/Tutoriels/assets/102873102/017a149f-6f6e-4184-9260-ea2d6f2ecf6c)
 
+**Cela devrait ressembler au même format que la ligne ci-dessous :**
+
 ![Capture d’écran, le 2023-11-22 à 11 06 06](https://github.com/nuage365/Tutoriels/assets/102873102/962e5728-65cc-4c16-8e02-61aa19cb330f)
+
+## Enregistrement de notre application dans le portail Azure et dans BC
+Nous allons maintenant passer aux choses sérieuses :)
+
+**Pour commencer, allez sur le portail de microsoft azure : [https://azure.microsoft.com/](https://azure.microsoft.com/)**
 
 ![Capture d’écran, le 2023-11-22 à 11 11 55](https://github.com/nuage365/Tutoriels/assets/102873102/bef57aa2-b4dc-4220-92f3-4f092d5ba25f)
 
