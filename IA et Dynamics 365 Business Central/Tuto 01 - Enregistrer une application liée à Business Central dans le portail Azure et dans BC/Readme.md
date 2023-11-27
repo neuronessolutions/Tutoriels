@@ -141,10 +141,18 @@ Après avoir enregistré notre ou nos apps dans le portail Microsoft Azure, il e
 
 ![Capture d’écran, le 2023-11-22 à 13 43 16](https://github.com/nuage365/Tutoriels/assets/102873102/b6d15b4a-d710-4677-abc6-3ccf9047cbb0)
 
+> **Ensuite, nous allons ajouter un ensemble d'autorisations pour l'enregistrement**
+> **Pour cela, cliquez sur "Nouvelle ligne" et choisir l'autorisation "D365 BUS FULL ACCESS"**
+
 ![Capture d’écran, le 2023-11-22 à 13 44 08](https://github.com/nuage365/Tutoriels/assets/102873102/4ee0a025-b398-4ec4-8250-f6a500329261)
 
-
 ![Capture d’écran, le 2023-11-22 à 13 44 42](https://github.com/nuage365/Tutoriels/assets/102873102/47b29c41-d8f5-46a8-b2ea-bf41221d83d9)
+
+> **Revenez sur l'écran précédent et votre nouvelle Application Azure Active Directory ou Microsoft Entrant ID a été créée !**
+> 
+> **Tout est prêt maintenant pour tester nos inscriptions et les API Business Central via 2 méthodes :**
+> - Via l'outil **Postman**
+> - Via un programme **Python**
 
 ![Capture d’écran, le 2023-11-22 à 13 45 46](https://github.com/nuage365/Tutoriels/assets/102873102/c7c4b53b-143f-4c94-9764-af1f3eb82e3e)
 
