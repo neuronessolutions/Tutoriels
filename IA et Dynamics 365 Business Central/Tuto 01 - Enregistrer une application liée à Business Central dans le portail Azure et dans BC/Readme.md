@@ -4,7 +4,7 @@
 Dans ce premier tutoriel, nous allons apprendre comment enregistrer nos applis et services qui seront liés à Microsoft Dynamics 365 Business Central et à ses API pour créer des services d'intelligence artificielle à partir de Shellbots ou apps externes en lien avec l'ERP. 
 
 **Pourquoi as t'on besoin d'enregistrer des applications lorsque nous voulons utiliser des données de notre ERP préféré ?**
-En fait, avant il n'était pas nécessaire de s'authentifier ainsi. il était possible juste avec son nom d'utilisateur et une web api key paramétréé directement dans Business Central de se connecter aux API BC. Pour des raisons de sécurité et d'optimisation, **il faut maintenant enregistrer chacune de ses applications qui vont utiliser les API BC dans le portail Microsoft Azure ainsi que dans Business central, une fois l'enregistrement fait dans Azure.**
+En fait, avant il n'était pas nécessaire de s'authentifier ainsi. il était possible juste avec son nom d'utilisateur et une web api key paramétréé directement dans Business Central de se connecter aux API BC. Pour des raisons de sécurité et d'optimisation, **il faut maintenant enregistrer chacune de ses applications qui vont utiliser les API BC dans le portail Microsoft Azure et aussi maintenant dans Business central, une fois l'enregistrement fait dans Azure.**
 
 ## Prérequis
 * Avoir un abonnement valide à Business Central ou une version d'essai
