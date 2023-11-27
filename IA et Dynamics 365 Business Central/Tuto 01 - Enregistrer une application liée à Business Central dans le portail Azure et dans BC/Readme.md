@@ -156,33 +156,58 @@ Après avoir enregistré notre ou nos apps dans le portail Microsoft Azure, il e
 
 ![Capture d’écran, le 2023-11-22 à 13 45 46](https://github.com/nuage365/Tutoriels/assets/102873102/c7c4b53b-143f-4c94-9764-af1f3eb82e3e)
 
+## Tests des API Business central via nos 2 applications (Postman et programme Python) 
+### Avec l'outil Postman
+
+**L'outil Postman permet de tester des requêtes API et web et de voir les résultats de celles-ci.**
+
+> **Première chose dans Postman, ajouter une requête de type GET, puis copier l'url vue au début qui était dans la colonne "OData V4 Url" représentant l'API Business Central des Clients (Customers)**
+
 ![Capture d’écran, le 2023-11-22 à 21 15 06](https://github.com/nuage365/Tutoriels/assets/102873102/8a65500f-f4e1-4457-bb62-7d7e48507dc4)
 
 
-![Capture d’écran, le 2023-11-22 à 21 18 23](https://github.com/nuage365/Tutoriels/assets/102873102/43b7bef3-5dcb-4b3c-9b4f-83f2ec025655)
+> **Puis dans l'onglet Authorization, dans la section de droite "Configure New Token", ajouter les éléments suivants :**
+> - Token Name : Indiqué un nom (ce que vous voulez comme identifiant de token)
+> - Grant Type : "Client Credentials"
+> - Access Token Url : Indiquez https://login.microsoftonline.com/VotreIddel'annuaire/oauth2/v2.0/token (Id de l'annuaire dans votre app enregistré sur azure)
+> - Client ID : Le client ID de votre app enregistré sur azure
+> - Client Secret : Le client Secret de votre app enregistré sur azure
+> - Scope : https://api.businesscentral.dynamics.com/.default
+> - Client Authentication : Send as Basic Auth header
 
 ![Capture d’écran, le 2023-11-22 à 21 20 37](https://github.com/nuage365/Tutoriels/assets/102873102/05b12aba-a6b6-444e-a51a-eb980582675e)
 
+> **Une fois les informations saisies, cliquez sur le bouton "Get new access Token"**
+
 ![Capture d’écran, le 2023-11-22 à 21 21 16](https://github.com/nuage365/Tutoriels/assets/102873102/e6307dcc-51d0-4690-903c-69e454dcfb9e)
 
-![Capture d’écran, le 2023-11-22 à 21 22 33](https://github.com/nuage365/Tutoriels/assets/102873102/1d6e2667-9ea1-42ae-b8ba-200284423285)
-
-
+> **Le Token est obtenu et nous sommes prêts à l'utiliser. Cliquez sur le bouton "Use Token".**
 
 ![Capture d’écran, le 2023-11-22 à 21 22 54](https://github.com/nuage365/Tutoriels/assets/102873102/cbfbf4f7-85ce-4bef-8f63-ab14b32f1dc4)
 
+> **Nous sommes prêts à lancer la requête en cliquant sur le bouton "Send". Nous n'avons pas indiqué de paramètres donc nous aurons la liste de tous les clients de l'environnement de dev**
 
 ![Capture d’écran, le 2023-11-22 à 21 23 40](https://github.com/nuage365/Tutoriels/assets/102873102/ab1dbf09-58f2-4b9d-b0ba-7e5db992e186)
 
+> **Voici le résultat de la requête au format Json avec la liste des clients. Le fichier Json contient le détail de chaque enregistrement client**
+
 ![Capture d’écran, le 2023-11-22 à 21 28 11](https://github.com/nuage365/Tutoriels/assets/102873102/ae995656-93b5-4e69-9e98-3f832445b293)
 
+### Avec un programme Python
+
+**Avec un simple programme en Python, nous sommes capables d'interroger la liste des clients de notre instance Business Central**
+
+> **Même principe que Postman en utilisant les Id obtenus de notre enregistrement d'application effectué sur le portail Azure.**
 
 ![Capture d’écran, le 2023-11-22 à 22 09 45](https://github.com/nuage365/Tutoriels/assets/102873102/962724d1-9973-48ba-87c5-5cde532c07c6)
 
+> **Résultat du programme Python à l'exécution**
+
 ![Capture d’écran, le 2023-11-22 à 22 55 31](https://github.com/nuage365/Tutoriels/assets/102873102/0242837c-3dbf-41b3-94cd-d19133e5494f)
 
+**Fichier source en Python**
 
-
+```python
 import requests
 
 # Remplacez ces valeurs par les informations de votre environnement Business Central
@@ -218,27 +243,5 @@ if response.status_code == 200:
         print(f"Nom du client : {customer.get('Name')}")
 else:
     print(f"Erreur lors de la récupération des clients. Code d'erreur : {response.status_code}")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+```
 
