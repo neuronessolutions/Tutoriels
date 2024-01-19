@@ -42,6 +42,7 @@ Pour supprimer une instance Business Central dans le contexte actuel, il suffit 
 ![screen5](https://github.com/nuage365/Tutoriels/assets/102873102/42d86457-f57c-4456-b246-d969dacaec2a)
 
 Après suppression et en refaisant un bc_getinstance, l'instance a bien été supprimée. Attention, si l'instance spécifiée avait des objets générés comme du code ou un modèle de machine learning, il faudra utiliser la commande **"bc_objects_export_all"** avant de pouvoir supprimer une instance. Ceci pour éviter de perdre des objets générés par le moteur Ia de shellbots.
+
 ![screen6](https://github.com/nuage365/Tutoriels/assets/102873102/98fe7d76-1474-41e8-933a-d6001762ad95)
 
 Si vous avez des questions, n'hésitez pas à m'envoyer une connexion sur Linkedin à https://www.linkedin.com/in/dominiquedelaire/
