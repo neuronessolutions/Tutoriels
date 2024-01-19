@@ -8,23 +8,38 @@ Dans ce second tutoriel, nous allons voir les 3 principales commandes pour gére
 
 ## Prérequis
 * Avoir un abonnement valide à Business Central ou une version d'essai
-* La dernière version de l'OS Shellbots avec une licence Pro et le noyau IA framework Shellbots version 1.2023.08.06
-* 
+* La dernière version de l'OS Shellbots et le noyau IA framework Shellbots version 1.2023.08.06 avec une licence Entreprise.
+  
+## Obtenir les instances Dynamics 365 Business Central d'un contexte shellbots
 
-## Exemple et objectif du Tutoriel
+Pour obtenir les instances déjà paramétrées dans un contexte particulier, il suffit de taper la commande **"bc_getinstance"**.
+Pour rappel, un contexte est une sorte de Projet. Chaque projet a un contexte et contient une base de données vectorielle qui lui est propre. Elle peut contenir des images, du texte, des données de l'ERP, de l'audio, etc...
 
-Dans Business Central, nous avons différentes API disponibles et nous pouvons aussi définir les nôtres.
+![screen2](https://github.com/nuage365/Tutoriels/assets/102873102/17d6ecbf-a222-497a-96f2-40704bfb6343)
 
-![Capture d’écran, le 2023-11-22 à 11 00 52](https://github.com/nuage365/Tutoriels/assets/102873102/d85e07e6-59d7-4214-8c31-482db4db9be9)
+## Créer une nouvelle instance business central pour le contexte actuel
 
-Pour nos tests, nous allons utiliser une API standard de Business Central qui fait référence aux clients de l'ERP. Enregistrer une application permet d'utiliser n'importe quelle API ou future API que nous pourrions publier :)
+Pour ajouter une nouvelle instance de Business central afin de faire le lien avec celle-ci et les fonctions du framework, il suffit de taper la commande **"bc_addinstance**.
+La commande demande différentes informations : 
+- Le nom de l'instance : Le nom que vous souhaitez qui représente votre instance. Par exemple, le type d'environnement prod, dev, etc., la compagnie bc, etc.
+- Le Tenant id : Celui que vous avez pour votre instance. (Voir Tuto 01) 
+- Le Client id : Celui que vous avez créé dans le portail azure quand vous avez enregistré votre application. (Voir Tuto 01)
+- Le Secret id : Celui que vous avez généré dans le portail azure quand vous avez enregistré votre application. (Voir Tuto 01) Quand vous saisissez le Secret Id, l'interface ne le montrera pas à l'écran.
+- L'url de base des api BC : cela correspond à l'url de base pour accéder aux services web de Business Central. Attention, c'est par Compagnie. Si vous avez plusieurs compagnies, il faut créer une instance par compagnie :) 
+  
+![screen3](https://github.com/nuage365/Tutoriels/assets/102873102/baddd30b-ac47-45bb-8836-64fcd3d2f03e)
 
-Voici ce que nous allons choisir pour nos tests comme web service : **allez dans l'écran Web services.**
+en refaisant un bc_getinstance, on obtient notre instance nouvellement créée dans le contexte actuel.
 
-![Capture d’écran, le 2023-11-22 à 11 01 21](https://github.com/nuage365/Tutoriels/assets/102873102/e586a529-d77f-4917-8c94-a29750f6cc85)
+![screen4](https://github.com/nuage365/Tutoriels/assets/102873102/b0e28834-3944-43a2-a880-491ce9aa8f39)
 
-![Capture d’écran, le 2023-11-22 à 11 01 59](https://github.com/nuage365/Tutoriels/assets/102873102/db8dc20c-2194-421f-9502-faabe05f9a0f)
+## Supprimer une instance existante de Business Central
 
-**Sélectionner la ligne comprenant la Page 22 Customers**
+Pour supprimer une instance Business Central dans le contexte actuel, il suffit d'utiliser la commande **"bc_removeinstance"**
 
-![Capture d’écran, le 2023-11-22 à 11 03 11](https://github.com/nuage365/Tutoriels/assets/102873102/f4910ee9-94f8-4197-8947-fec5856701eb)
+![screen5](https://github.com/nuage365/Tutoriels/assets/102873102/42d86457-f57c-4456-b246-d969dacaec2a)
+
+Après suppression et en refaisant un bc_getinstance, l'instance a bien été supprimée. Attention, si l'instance spécifiée avait des objets générés comme du code ou un modèle de machine learning, il faudra utiliser la commande **"bc_objects_export_all"** avant de pouvoir supprimer une instance. Ceci pour éviter de perdre des objets générés par le moteur Ia de shellbots.
+![screen6](https://github.com/nuage365/Tutoriels/assets/102873102/98fe7d76-1474-41e8-933a-d6001762ad95)
+
+Si vous avez des questions, n'hésitez pas à m'envoyer une connexion sur Linkedin à [https://linkedin.com/dominiquedelaire](https://www.linkedin.com/in/dominiquedelaire/)https://www.linkedin.com/in/dominiquedelaire/
