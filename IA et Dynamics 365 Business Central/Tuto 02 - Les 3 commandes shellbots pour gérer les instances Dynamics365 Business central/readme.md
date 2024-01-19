@@ -9,6 +9,8 @@ Dans ce second tutoriel, nous allons voir les 3 principales commandes pour gére
 ## Prérequis
 * Avoir un abonnement valide à Business Central ou une version d'essai
 * La dernière version de l'OS Shellbots et le noyau IA framework Shellbots version 1.2023.08.06 avec une licence Entreprise.
+* Avoir suivi ou revoir le tutoriel 01 : https://github.com/nuage365/Tutoriels/tree/main/IA%20et%20Dynamics%20365%20Business%20Central/Tuto%2001%20-%20Enregistrer%20une%20application%20li%C3%A9e%20%C3%A0%20Business%20Central%20dans%20le%20portail%20Azure%20et%20dans%20BC
+  
   
 ## Obtenir les instances Dynamics 365 Business Central d'un contexte shellbots
 
@@ -21,11 +23,11 @@ Pour rappel, un contexte est une sorte de Projet. Chaque projet a un contexte et
 
 Pour ajouter une nouvelle instance de Business central afin de faire le lien avec celle-ci et les fonctions du framework, il suffit de taper la commande **"bc_addinstance**.
 La commande demande différentes informations : 
-- Le nom de l'instance : Le nom que vous souhaitez qui représente votre instance. Par exemple, le type d'environnement prod, dev, etc., la compagnie bc, etc.
-- Le Tenant id : Celui que vous avez pour votre instance. (Voir Tuto 01) 
-- Le Client id : Celui que vous avez créé dans le portail azure quand vous avez enregistré votre application. (Voir Tuto 01)
-- Le Secret id : Celui que vous avez généré dans le portail azure quand vous avez enregistré votre application. (Voir Tuto 01) Quand vous saisissez le Secret Id, l'interface ne le montrera pas à l'écran.
-- L'url de base des api BC : cela correspond à l'url de base pour accéder aux services web de Business Central. Attention, c'est par Compagnie. Si vous avez plusieurs compagnies, il faut créer une instance par compagnie :) 
+- **Le nom de l'instance** : Le nom que vous souhaitez qui représente votre instance. Par exemple, le type d'environnement prod, dev, etc., la compagnie bc, etc.
+- **Le Tenant id** : Celui que vous avez pour votre instance. (Voir Tuto 01) 
+- **Le Client id** : Celui que vous avez créé dans le portail azure quand vous avez enregistré votre application. (Voir Tuto 01)
+- **Le Secret id** : Celui que vous avez généré dans le portail azure quand vous avez enregistré votre application. (Voir Tuto 01) Quand vous saisissez le Secret Id, l'interface ne le montrera pas à l'écran.
+- **L'url de base des api BC** : cela correspond à l'url de base pour accéder aux services web de Business Central. Attention, c'est par Compagnie. Si vous avez plusieurs compagnies, il faut créer une instance par compagnie :) 
   
 ![screen3](https://github.com/nuage365/Tutoriels/assets/102873102/baddd30b-ac47-45bb-8836-64fcd3d2f03e)
 
@@ -42,4 +44,4 @@ Pour supprimer une instance Business Central dans le contexte actuel, il suffit 
 Après suppression et en refaisant un bc_getinstance, l'instance a bien été supprimée. Attention, si l'instance spécifiée avait des objets générés comme du code ou un modèle de machine learning, il faudra utiliser la commande **"bc_objects_export_all"** avant de pouvoir supprimer une instance. Ceci pour éviter de perdre des objets générés par le moteur Ia de shellbots.
 ![screen6](https://github.com/nuage365/Tutoriels/assets/102873102/98fe7d76-1474-41e8-933a-d6001762ad95)
 
-Si vous avez des questions, n'hésitez pas à m'envoyer une connexion sur Linkedin à [https://linkedin.com/dominiquedelaire](https://www.linkedin.com/in/dominiquedelaire/)https://www.linkedin.com/in/dominiquedelaire/
+Si vous avez des questions, n'hésitez pas à m'envoyer une connexion sur Linkedin à https://www.linkedin.com/in/dominiquedelaire/
