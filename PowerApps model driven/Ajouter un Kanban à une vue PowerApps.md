@@ -1,5 +1,5 @@
 # Tutoriel Ajouter un composant Kanban dans une vue PowerApps
-> Version 2023.10.07, Auteur : Dominique Delaire
+> Version 2024.06.28, Auteur : Dominique Delaire
 > 
 ![Capture d’écran, le 2023-10-07 à 14 29 07](https://github.com/nuage365/Tutoriels/assets/102873102/18dd8668-0cb7-4c55-b958-b5224eb72815)
 
@@ -146,7 +146,8 @@ On peut ajuster certains éléments du Kanban lorsque nous sommes dans la défin
 
 ![Capture d’écran, le 2023-10-07 à 14 31 14](https://github.com/nuage365/Tutoriels/assets/102873102/743c2e2f-dfa7-46c7-a311-d2ede54fcfa7)
 
-> Comme d'habitude, Si vous avez des questions, vous pouvez me contacter sur [Linkedin](https://www.linkedin.com/in/dominiquedelaire/)
+> Comme d'habitude, Si vous avez des questions ou un projet, vous pouvez me contacter sur [Linkedin](https://www.linkedin.com/in/dominiquedelaire/)
+> Notre équipe sénior d'une vingtaine de consultants est là pour vous aider !
 > Dominique
 
 
