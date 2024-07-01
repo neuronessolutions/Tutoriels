@@ -7,7 +7,7 @@ Vous pourriez utiliser ce code pour générer des mp3 qui lisent des documents o
 ## Prérequis
 * Avoir d'installé sur Windows, Mac ou Linux, une dernière version de Python ainsi que de la dernière version du module de OpenAI (pip install openai)
 * Avoir une clé secrète OpenAI générée et valide dans votre profil OpenAI
-![Capture d’écran, le 2023-11-19 à 22 41 14](https://github.com/nuage365/Tutoriels/assets/102873102/19bb9ed0-8cb2-4d09-94e3-c645906efea7)
+![Capture d’écran, le 2023-11-19 à 22 41 14](https://github.com/neuronessolutions/Tutoriels/assets/102873102/19bb9ed0-8cb2-4d09-94e3-c645906efea7)
 
 ## Créer le code source texttospeech_openai.py
 
@@ -33,12 +33,12 @@ response.stream_to_file(speech_file_path)
 ```
 ## En exécutant le programme texttospeech_openai.py, le fichier test.mp3 est créé !
 
-![Capture d’écran, le 2023-11-19 à 23 12 00](https://github.com/nuage365/Tutoriels/assets/102873102/342109ba-caa3-4e81-aa7d-5f52835a7705)
+![Capture d’écran, le 2023-11-19 à 23 12 00](https://github.com/neuronessolutions/Tutoriels/assets/102873102/342109ba-caa3-4e81-aa7d-5f52835a7705)
 
 
 J'ai converti le fichier audio test.mp3 en mp4 pour pouvoir l'écouter à partir de Github directement :) je joins le fichier test.mp3 avec le source dans les fichiers.
 
 Cliquez sur le lien pour écouter le résultat : 
-https://github.com/nuage365/Tutoriels/assets/102873102/d131a524-82aa-473d-a4fd-59480404d7b9
+https://github.com/neuronessolutions/Tutoriels/assets/102873102/d131a524-82aa-473d-a4fd-59480404d7b9
 
 
