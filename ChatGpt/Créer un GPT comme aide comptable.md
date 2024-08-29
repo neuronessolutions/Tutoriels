@@ -75,7 +75,9 @@ Il y a plusieurs possibilités :
 ![Capture d’écran, le 2024-08-28 à 22 32 36](https://github.com/user-attachments/assets/98c03774-aaa7-4670-bae1-16c6d47fa4dc)
 
 **Cela peut paraître simple mais il suffit de lui donner en amont des documents pour indiquer comment on veut gérer notre comptabilité et cela pourrait être un outil intéressant.
-Ici, on en a fait un gpt mais on pourrait faire un outil beaucoup plus complexe et dédié pour automatiser des processus en utilisant aussi l'API d'OpenAI**
+Ici, on en a fait un gpt mais on pourrait faire un outil beaucoup plus complexe et dédié pour automatiser des processus comptables en utilisant aussi l'API d'OpenAI**
+
+**On pourrait lui demander aussi de faire des analyses sur des états financiers ou les soldes intermédiaires de gestion :)**
 
 Comme d'habitude si vous avez des questions, n'hésitez pas à me contacter sur Linkedin :)
 
