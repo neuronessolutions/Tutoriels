@@ -79,6 +79,8 @@ Ici, on en a fait un gpt mais on pourrait faire un outil beaucoup plus complexe 
 
 **On pourrait lui demander aussi de faire des analyses sur des états financiers ou les soldes intermédiaires de gestion :)**
 
+**Vous pourriez faire la même chose aussi avec Microsoft Copilot Studio pour créer votre propre Copilot :)**
+
 > Comme d'habitude, Si vous avez des questions ou un projet en IA, Dynamics CRM ou PowerApps de Microsoft, vous pouvez me contacter sur [Linkedin](https://www.linkedin.com/in/dominiquedelaire/)
 > Notre équipe sénior d'une vingtaine de consultants est là pour vous aider !
 > Dominique
